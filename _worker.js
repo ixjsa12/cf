@@ -7,7 +7,7 @@ export default {
     }
     return handleRequest(request)
   },
-  async function handleRequest(request) {
+  async  handleRequest(request) {
 	const url = new URL(request.url);
 
 	// 从请求路径中提取目标 URL
