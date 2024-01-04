@@ -5,7 +5,8 @@ export default {
       // TODO: Add your custom /api/* logic here.
          return env.ASSETS.fetch(request);
     }
-    return handleRequest(request)
+	
+    return this.handleRequest(request)
   },
   async  handleRequest(request) {
 	const url = new URL(request.url);
